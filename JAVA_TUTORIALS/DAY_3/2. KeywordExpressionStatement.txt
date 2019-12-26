@@ -1,0 +1,17 @@
+package com.tirthyakamaldasgupta;
+public class KeywordExpressionStatement {
+    public static void main(String[] args) {
+        //Keywords are reserved words that are used by the programming language and cannot be reused to declare variables or methods. For example, public, static, void are the reserved keywords.
+        //Identifiers are the names which we can use to declare, variables, methods etc.
+        //Expression is anything when we declare or assign a value to a variable.
+        //Statement is a line of code
+        //For example,
+        int a = 10;
+        //Here, "int" is a keyword, "a" is an identifier, "a = 10" is an Expression and "int a = 10;" is a statement.
+        //For example,
+        System.out.println("Hello World");
+        //Here, "System.out.println" is a keyword (We are calling a method here), "Hello world" is an expression and "System.out.println("Hello world");" is a statement.
+        //Note: We can put multiple statements in one line. For example,
+        int b = 20;int c = a + b;System.out.println("The sum of a and b is " + c);
+    }
+}

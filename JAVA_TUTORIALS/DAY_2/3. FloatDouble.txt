@@ -1,0 +1,16 @@
+package com.company;
+public class FloatDouble {
+    public static void main(String[] args) {
+        //float (occupies 32 bit)
+        float MyMinFloatValue = Float.MIN_VALUE; //Java has Float method inbuilt.
+        float MyMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO A FLOAT TYPE VARIABLE IS " + MyMinFloatValue + " TO " + MyMaxFloatValue);
+        //double (occupies 64 bit)
+        double MyMinDoubleValue = Double.MIN_VALUE; //Java has Double method inbuilt.
+        double MyMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO A DOUBLE TYPE VARIABLE IS " + MyMinDoubleValue + " TO " + MyMaxDoubleValue);
+        //In the case of assigning a value to  a float or double type variable, we have to put the suffix 'f' and 'd' respectively after the number to denote that it is a float or double. However they can hold the integer part, without specifying 'f' or 'd', but as soon as the decimal part is specified it will throw an error if the suffix 'f' or 'd' is not specified.
+        //Or we can use typecasting without specifying the suffixes like this:
+        float TestFloatValue = (float) 5.25;
+    }
+}

@@ -1,0 +1,12 @@
+package com.tirthyakamaldasgupta;
+
+public class DoWhileStatement {
+    public static void main(String[] args) {
+        //Do while is an alternate implementation of the while statement. Both does the same job.
+        int count = 0;
+        do {
+            System.out.println(count);
+            count++;
+        } while (count != 5);
+    }
+}

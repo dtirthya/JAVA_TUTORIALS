@@ -1,0 +1,9 @@
+public class PrintingOnTheConsole { //public (also a keyword) is an access modifier.
+    public static void main(String[] args) { //public (also a keyword) is an access modifier.. Here main is a method which we've created.
+        String MyName = "Tirthya";
+        int FirstTotal = 10 + 20;
+        int NumberOne = 30;
+        int NumberTwo = 40;
+        int SecondTotal = NumberOne + NumberTwo;
+        System.out.println("Hello, " + MyName + ",");
+        System.out.println("FIRST TOTAL = " + FirstTotal + " and SECOND TOTAL = " + SecondTotal);

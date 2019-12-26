@@ -1,0 +1,11 @@
+package com.tirthyakamaldasgupta;
+
+public class Main {
+    public static void main(String[] args) {
+        //A string contains a sequence of characters. It is limited by the MAX_VALUE of an int. String must be placed within double quotes.
+        String MyName = "TIRTHYA KAMAL DASGUPTA PHOTOGRAPHY";
+        String MyCustomString = "Welcome to " + MyName + " \u00A92019";
+        System.out.println(MyCustomString);
+        //Strings are immutable.
+    }
+}

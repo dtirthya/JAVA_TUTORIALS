@@ -1,0 +1,14 @@
+package com.company;
+public class TypeCasting {
+    public static void main(String[] args) {
+        byte MyMinByteValue = Byte.MIN_VALUE;
+        //For example, we are dividing this byte value by 2. By default java uses int variable type. So dividing a byte type variable with an integer type variable is impossible. So we have to do typecasting here.
+        byte GetQuotientTypeByte = (byte) (MyMinByteValue / 2);
+        //Or we can typecast the entire result to an integer variable like this:
+        int GetQuotientTypeInt = (int) (MyMinByteValue / 2);
+        System.out.println("THE QUOTIENT IS: " + GetQuotientTypeByte);
+        System.out.println("DATATYPE: " + Byte.TYPE); //Checking the type
+        System.out.println("THE QUOTIENT IS: " + GetQuotientTypeInt);
+        System.out.println("DATATYPE: " + Integer.TYPE); //Checking the type
+    }
+}

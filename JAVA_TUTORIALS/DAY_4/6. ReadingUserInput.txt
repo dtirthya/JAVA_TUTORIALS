@@ -1,0 +1,23 @@
+package com.tirthyakamaldasgupta;
+import java.util.Scanner; //This library needs to be imported to scan user inputs.
+
+public class ReadingUserInput {
+    public static void main(String[] args) {
+        Scanner NewScanner = new Scanner(System.in); //Here we are creating a new instance of the scanner called "NewScanner" of type "Scanner".
+        System.out.println("Enter your name: ");
+        String name = NewScanner.nextLine(); //Storing the value of the scanner object. Note: "nextline" method is the alternative of Enter key. It reads user input in the next line.
+        //Executing statements or reusing the scanner
+        System.out.println("Enter your year of birth: ");
+        boolean IsIntOrNot = NewScanner.hasNextInt(); //Optional. Checks if the input given is an integer or not.
+        if (IsIntOrNot) {
+            int year = NewScanner.nextInt(); //The "nextInt" method directly parses a string value to an integer value from the console, eliminating the need to parse manually. Though manual parsing can be done.
+            NewScanner.nextLine();
+            int age = 2018 - year;
+            System.out.println("Hello " + name + ", your age is " + age);
+        }
+        else {
+            System.out.println("Hello " + name + ", please provide your DOB in integer format.");
+        }
+        NewScanner.close(); //Closing the scanner object to free up memory.
+    }
+}

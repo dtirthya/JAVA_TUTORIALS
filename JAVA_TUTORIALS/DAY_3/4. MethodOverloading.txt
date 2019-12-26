@@ -1,0 +1,27 @@
+package com.tirthyakamaldasgupta;
+
+public class MethodsOverloading {
+    public static void main(String[] args) {
+        //Method overloading is that phenomenon when we can use the same method name over and over again, no matter what it's return type is, but with different sets of arguments each time.
+        //For example,
+        int newscore = calculatescore("Tirthya", 500);
+        System.out.println("New score is " + newscore);
+        calculatescore(75);
+        calculatescore();
+    }
+
+    public static int calculatescore(String playername, int score) {
+        System.out.println("Player " + playername + " scored " + score + " points.");
+        return score * 1000;
+    }
+
+    public static int calculatescore(int score) {
+        System.out.println("Unnamed player scored " + score + " points.");
+        return score * 1000;
+    }
+
+    public static int calculatescore() {
+        System.out.println("No player name and no player score.");
+        return 0;
+    }
+}

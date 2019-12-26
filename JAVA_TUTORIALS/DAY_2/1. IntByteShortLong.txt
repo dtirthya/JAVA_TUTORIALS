@@ -1,0 +1,24 @@
+package com.company;
+public class IntByteShortLong {
+    public static void main(String[] args) {
+        //int (occupies 32 bit)
+        int MyMinIntValue = Integer.MIN_VALUE; //Java has Integer method inbuilt.
+        int MyMaxIntValue = Integer.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO AN INTEGER TYPE VARIABLE IS " + MyMinIntValue + " TO " + MyMaxIntValue);
+        //byte (occupies 8 bit)
+        byte MyMinByteValue = Byte.MIN_VALUE; //Java has Byte method inbuilt.
+        byte MyMaxByteValue = Byte.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO A BYTE TYPE VARIABLE IS " + MyMinByteValue + " TO " + MyMaxByteValue);
+        //short (occupies 16 bit)
+        short MyMinShortValue = Short.MIN_VALUE; //Java has  method inbuilt.
+        short MyMaxShortValue = Short.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO A SHORT TYPE VARIABLE IS " + MyMinShortValue + " TO " + MyMaxShortValue);
+        //byte (occupies 64 bit)
+        long MyMinLongValue = Long.MIN_VALUE; //Java has Long method inbuilt.
+        long MyMaxLongValue = Long.MAX_VALUE;
+        System.out.println("THE RANGE OF VALUES THAT CAN BE PROVIDED TO A LONG TYPE VARIABLE IS " + MyMinLongValue + " TO " + MyMaxLongValue);
+        //For example, if you print (Integer.MAX_VALUE + 1) it will overflow and show the result which is same as the value obtained by calling Integer.MIN_VALUE. On the other hand if you print (Integer.MIN_VALUE - 1) it will underflow and show the result which is same as the value obtained by calling Integer.MAX_VALUE. This is the phenomenon when the value resets to the last checkpoint. It will happen with those type of variables which speifies a given range.
+        //We can also write a variable value in this way: int a = 1_92_400 (which resembles the format 1,92,400 in case of a number 192400).
+        //In the case of assigning a value to  a long int type variable, we have to put the suffix L after the number to denote that it is a long int. However it can hold a number as far as the normal integer range goes, without specifying L, but as soon as it exceeds the limit it will throw an error if the suffix L is not specified.
+    }
+}

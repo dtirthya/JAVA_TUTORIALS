@@ -1,0 +1,17 @@
+package com.tirthyakamaldasgupta;
+public class IfThen {
+    public static void main(String[] args) {
+        boolean Value = true;
+        if (Value == false);
+            System.out.println("Hello World");
+            //As ';' is given after the if statement, the condition is not checked, and the statement within the if statement gets executed blindly. So, don't give semicolon after if statement.
+        if (Value == false) {
+            System.out.println("Hello World");
+            //Now, we see that the code is not executed, as the condition is checked.
+        }
+        if (Value == false)
+            System.out.println("BLIND");
+            System.out.println("Hello World Two");
+            //We will see that the second statement is still executed. If block doesn't support multiple statement without giving curly braces. You can execute only one statement without curly braces.
+    }
+}

@@ -1,0 +1,18 @@
+package com.company;
+public class CharBoolean {
+    public static void main(String[] args) {
+        //Char (Occupies 16 bits or 2 bytes) is used to store a single character. It allows us to store Unicode characters (search over the internet to see all the Unicode characters available) and for that it's size is not 1 byte. For example,
+        char MyNewCharVariableOne = '2';
+        char MyNewCharVariableTwo = 'D';
+        //The value of the character 'D' is 0044. If we want to reverse print the character associated with this code, we will get 'D' as the result.
+        char GetCharacterByUnicode = '\u0044'; //To fetch the character by providing the Unicode, we have to write in this way by providing '\' and then by writing 'u' ('u' for Unicode) and then specifying the code.
+        System.out.println(MyNewCharVariableOne);
+        System.out.println(MyNewCharVariableTwo);
+        System.out.println(GetCharacterByUnicode);
+        //Boolean
+        boolean ValueTrue = true;
+        boolean ValueFalse = false;
+        System.out.println(ValueTrue);
+        System.out.println(ValueFalse);
+    }
+}
